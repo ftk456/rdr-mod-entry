@@ -1,0 +1,14 @@
+﻿  Performing Custom Build Tools
+  Starting SC-CL ALPHA 0.7.3.7 running Clang 3.8.1
+  Compiling: C:\Users\matvs\Desktop\SC-CL\projects\example\example.c
+  C:\Users\matvs\Desktop\SC-CL\projects\example\example.c:29:19: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+                          if (scriptName != "")
+                                         ^  ~~
+  C:\Users\matvs\Desktop\SC-CL\projects\example\example.c:34:22: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                                  START_NEW_SCRIPT(GET_SCRIPT_NAME(), 0);
+                                                   ^~~~~~~~~~~~~~~~~
+  ../../include/RDR/natives32.h:473:43: note: passing argument to parameter 'scriptName' here
+  extern _native int START_NEW_SCRIPT(char* scriptName, int stackSize)l
+                                            ^
+  2 warnings generated.
+  Compiling: C:\Users\matvs\Desktop\SC-CL\projects\example\..\..\include\common.c
